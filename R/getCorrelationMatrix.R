@@ -19,7 +19,7 @@ getCorrelationMatrix <- function(chr,data_cases_controls,r_low=0.1,r_high=0.3,di
   library(arrangements)
 
 
-  probe_loc <- read.csv("./CoRSIV_ESS_SIV_CG_sites_clusters_hg38.csv",header = T,stringsAsFactors = F)
+  probe_loc <- probe_id #read.csv("./CoRSIV_ESS_SIV_CG_sites_clusters_hg38.csv",header = T,stringsAsFactors = F)
   if(one_prob_per_CoRSIV){
   probe_loc = probe_loc[!duplicated(probe_loc$CG),]
   probe_loc = probe_loc[!duplicated(probe_loc$cluster_id),]

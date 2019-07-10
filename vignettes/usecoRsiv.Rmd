@@ -14,7 +14,19 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r setup,warning=FALSE}
 library(coRsiv)
+library(corrplot)
+data(probe_id)
+data("kidney_probe_data")
+matrix_list <- getCorrelationMatrix(chr = 1,data_cases_controls =kidney_probe_data,r_low = 0,r_high = 1,dist_cutoff = 0)
+
+```
+
+```{r setup,warning=FALSE}
+corrplot(matrix_list[[1]],type = "full",
+             method = "square", tl.cex = 1, tl.col = 'black',
+             diag = FALSE,tl.srt=45,addgrid.col = NA,is.corr = FALSE,addCoef.col = "black",number.cex = 0.01)
+
 
 ```
