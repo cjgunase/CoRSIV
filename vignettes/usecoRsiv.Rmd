@@ -1,0 +1,20 @@
+---
+title: "How to Use CoRSIVs"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{usecoRsiv}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(coRsiv)
+
+```

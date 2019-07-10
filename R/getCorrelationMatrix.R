@@ -15,6 +15,7 @@ getCorrelationMatrix <- function(chr,data_cases_controls,r_low=0.1,r_high=0.3,di
     stop("Package \"pkg\" needed for this function to work. Please install it.",
          call. = FALSE)
   }
+
   library(arrangements)
 
 
