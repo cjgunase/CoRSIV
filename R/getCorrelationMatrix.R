@@ -149,6 +149,7 @@ getCorrelationMatrix <- function(chr,data_cases_controls,r_low=0.1,r_high=0.3,di
   M_case[lower.tri(M_case)] <-0
   merged <- M_control + M_case
   merged <- merged * distance_matrix
+  print("done")
 
   return(list(merged,M_control_unfilterd,M_case_unfilterd,merged_df_pos))
 
