@@ -18,7 +18,7 @@ Chathura Gunasekara (gunaseka AT bcm.edu)
 If you want to work with the raw FASTQ files, you can download them from [dbGAP](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001746.v1.p1)
 
 
-#### ipython notebooks:
+#### reproducible prototypes in ipython notebooks:
 [Notebook 0: Filenames](./notebooks/list_files.ipynb)<br>
 [Notebook 1: Bisulfit pipeline](./notebooks/preproc.ipynb)<br>
 [Notebook 2: CoRSIV Detection Algorithm](./notebooks/CoRSIV_Detect.ipynb)<br>
